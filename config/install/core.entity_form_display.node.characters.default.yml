@@ -1,0 +1,146 @@
+uuid: 3c4fea06-97cb-43db-81b0-8c19e89e404e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.characters.field_character_appearance
+    - field.field.node.characters.field_character_birthday
+    - field.field.node.characters.field_character_category
+    - field.field.node.characters.field_character_id
+    - field.field.node.characters.field_character_image
+    - field.field.node.characters.field_character_nickname
+    - field.field.node.characters.field_character_occupation
+    - field.field.node.characters.field_character_portrayed
+    - field.field.node.characters.field_character_status
+    - image.style.thumbnail
+    - node.type.characters
+  module:
+    - datetime
+    - image
+    - path
+id: node.characters.default
+targetEntityType: node
+bundle: characters
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_character_appearance:
+    type: string_textfield
+    weight: 128
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_character_birthday:
+    type: datetime_default
+    weight: 123
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_character_category:
+    type: string_textfield
+    weight: 130
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_character_id:
+    type: number
+    weight: 121
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_character_image:
+    type: image_image
+    weight: 125
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_character_nickname:
+    type: string_textfield
+    weight: 127
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_character_occupation:
+    type: string_textfield
+    weight: 124
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_character_portrayed:
+    type: string_textfield
+    weight: 129
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_character_status:
+    type: string_textfield
+    weight: 126
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 15
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 120
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 16
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,38 @@
+uuid: 99e25b09-f25e-48ed-81ea-1f7d9c365dff
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.characters.field_character_appearance
+    - field.field.node.characters.field_character_birthday
+    - field.field.node.characters.field_character_category
+    - field.field.node.characters.field_character_id
+    - field.field.node.characters.field_character_image
+    - field.field.node.characters.field_character_nickname
+    - field.field.node.characters.field_character_occupation
+    - field.field.node.characters.field_character_portrayed
+    - field.field.node.characters.field_character_status
+    - node.type.characters
+  module:
+    - user
+id: node.characters.teaser
+targetEntityType: node
+bundle: characters
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_character_appearance: true
+  field_character_birthday: true
+  field_character_category: true
+  field_character_id: true
+  field_character_image: true
+  field_character_nickname: true
+  field_character_occupation: true
+  field_character_portrayed: true
+  field_character_status: true

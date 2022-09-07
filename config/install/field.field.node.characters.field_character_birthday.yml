@@ -1,0 +1,21 @@
+uuid: da932c8b-1c2e-494a-9541-451b0181ddcb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_character_birthday
+    - node.type.characters
+  module:
+    - datetime
+id: node.characters.field_character_birthday
+field_name: field_character_birthday
+entity_type: node
+bundle: characters
+label: 'Character Birthday'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

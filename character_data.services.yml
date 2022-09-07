@@ -1,0 +1,3 @@
+services:
+  characterData.service:
+    class: Drupal\character_data\characterService

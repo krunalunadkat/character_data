@@ -1,0 +1,23 @@
+uuid: 1489d3fd-f91a-49fb-a65e-fc91074c0f74
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_character_id
+    - node.type.characters
+id: node.characters.field_character_id
+field_name: field_character_id
+entity_type: node
+bundle: characters
+label: 'Character ID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

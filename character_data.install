@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * Implements hook_uninstall().
+ */
+function  character_data_uninstall() {
+
+  $nodes = \Drupal::entityQuery("node")
+    ->condition('type', 'characters')
+    ->execute();
+
+  $storage_handler = \Drupal::entityTypeManager()->getStorage("node");
+
+  if (!empty($nodes)) {
+    foreach ($nodes as $key => $value) {
+      $node = $storage_handler->load($value);
+      $node->delete($node);    
+    }
+  }
+
+    // Delete content type.
+  $content_type = \Drupal::entityTypeManager()
+    ->getStorage('node_type')
+    ->load('characters');
+  $content_type->delete();
+}

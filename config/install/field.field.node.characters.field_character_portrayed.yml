@@ -1,0 +1,19 @@
+uuid: 83310832-f55e-477e-afc3-0cc127c19521
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_character_portrayed
+    - node.type.characters
+id: node.characters.field_character_portrayed
+field_name: field_character_portrayed
+entity_type: node
+bundle: characters
+label: 'Character portrayed'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

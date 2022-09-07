@@ -1,0 +1,107 @@
+uuid: b38299aa-ce86-41e8-998e-25aa1b2f819d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.characters.field_character_appearance
+    - field.field.node.characters.field_character_birthday
+    - field.field.node.characters.field_character_category
+    - field.field.node.characters.field_character_id
+    - field.field.node.characters.field_character_image
+    - field.field.node.characters.field_character_nickname
+    - field.field.node.characters.field_character_occupation
+    - field.field.node.characters.field_character_portrayed
+    - field.field.node.characters.field_character_status
+    - node.type.characters
+  module:
+    - datetime
+    - image
+    - user
+id: node.characters.default
+targetEntityType: node
+bundle: characters
+mode: default
+content:
+  field_character_appearance:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_character_birthday:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_character_category:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 110
+    region: content
+  field_character_id:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_character_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_character_nickname:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_character_occupation:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_character_portrayed:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  field_character_status:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

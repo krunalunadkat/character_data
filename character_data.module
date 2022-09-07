@@ -1,0 +1,43 @@
+<?php
+
+use \Drupal\node\Entity\Node;
+use \Drupal\file\Entity\File;
+use \Drupal\Core\File\FileSystemInterface;
+/**
+ * Implements hook_preprocess_node().
+ */
+function character_data_preprocess_node(array &$variables) {
+		
+		//\Drupal::service('characterData.service')->CharacterData();
+		// $url = 'https://breakingbadapi.com/api/characters';
+		// $client = \Drupal::httpClient();
+		// $request = $client->get($url);
+		// $body = $request->getBody()->getContents();
+		// $AllData = (array)json_decode($body);
+		// $data = file_get_contents($AllData[0]->img);
+		// $destination = 'public://'.$AllData[0]->nickname.'.png';
+		// $fileRepository = \Drupal::service('file.repository');
+		// $file = $fileRepository->writeData($data, $destination, FileSystemInterface::EXISTS_REPLACE);
+		// $node = Node::create([
+		//   'type'=> 'characters',
+		//   'title'=> $AllData[0]->name,
+		//   'field_character_id'=> $AllData[0]->char_id,
+		//   'field_character_status'=> $AllData[0]->status,
+		//   'field_character_nickname'=> $AllData[0]->nickname,
+		//   'field_character_portrayed'=> $AllData[0]->portrayed,
+		//   'field_character_category'=> $AllData[0]->category,
+		//   'field_character_birthday'=> $AllData[0]->birthday,
+		//   'field_character_occupation'=> $AllData[0]->category,
+		//   'field_character_appearance'=> $AllData[0]->occupation,
+		//   'field_character_image'=> [
+	 //      'target_id' => $file->id(),
+	 //      'alt' => 'Sample',
+	 //      'title' => 'nodecreate Image'
+		//   ],
+		// ]);
+		// $node->save();
+}
+
+function character_data_cron() {
+		\Drupal::service('characterData.service')->CharacterData();
+}
